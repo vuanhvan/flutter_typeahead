@@ -274,7 +274,7 @@ class _FloaterState extends State<Floater> with WidgetsBindingObserver {
     );
     return switch (direction) {
       AxisDirection.down => Size(
-          overlaySize.width + 32,
+          overlaySize.width,
           overlaySize.height - floaterOffset.dy - size.height,
         ),
       AxisDirection.up => Size(
@@ -368,7 +368,7 @@ class _FloaterState extends State<Floater> with WidgetsBindingObserver {
           );
 
           overlaySize = Size(
-            overlaySize.width - viewPadding.left - viewPadding.right,
+            overlaySize.width ,//- viewPadding.left - viewPadding.right,
             overlaySize.height - viewPadding.top - viewPadding.bottom,
           );
 
