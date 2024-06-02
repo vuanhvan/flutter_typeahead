@@ -368,7 +368,7 @@ class _FloaterState extends State<Floater> with WidgetsBindingObserver {
           );
 
           overlaySize = Size(
-            overlaySize.width ,//- viewPadding.left - viewPadding.right,
+            overlaySize.width + 40,//- viewPadding.left - viewPadding.right,
             overlaySize.height - viewPadding.top - viewPadding.bottom,
           );
 
